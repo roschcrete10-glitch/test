@@ -1,0 +1,13 @@
+name: My first CI
+
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: say hello
+    - run: each "Hello from github actions"

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Holiday Page</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding: 60px;
+        background: #f4f7ff;
+      }
+
+      button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #3563e9;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My Holiday Calendar</h1>
+
+    <p id="message">Click the button to see a holiday.</p>
+
+    <button onclick="showHoliday()">Show holiday</button>
+
+    <script>
+      function showHoliday() {
+        document.getElementById("message").textContent =
+          "26 January: Republic Day";
+      }
+    </script>
+  </body>
+</html>
