@@ -1,0 +1,19 @@
+name: Check website
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check the homepage exists
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download this repository
+        uses: actions/checkout@v4
+      - name: Check for index.html
+        run: test -f index.html

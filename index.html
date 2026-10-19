@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17213f" />
+    <title>Holiday Atlas · 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top" aria-label="Holiday Atlas home"><span>✦</span> Holiday Atlas</a>
+        <p class="eyebrow">India · 2026</p>
+        <h1>Make room for the days that matter.</h1>
+        <p class="intro">A quiet, visual calendar of selected public holidays and cultural celebrations.</p>
+        <div class="legend" aria-label="Calendar legend">
+          <span><i class="dot holiday"></i> Holiday</span>
+          <span><i class="dot today"></i> Today</span>
+        </div>
+        <p class="disclaimer">Dates can vary by state, religion, and local government notification. Always confirm before making travel or work plans.</p>
+      </aside>
+
+      <section class="calendar-area" id="top">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow">Your year at a glance</p>
+            <h2 id="month-title">January <span>2026</span></h2>
+          </div>
+          <div class="controls">
+            <button id="prev-month" aria-label="Previous month">←</button>
+            <button id="today-button">Today</button>
+            <button id="next-month" aria-label="Next month">→</button>
+          </div>
+        </header>
+        <div class="weekdays" aria-hidden="true">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div id="calendar-grid" class="calendar-grid" aria-live="polite"></div>
+        <section class="upcoming" aria-labelledby="upcoming-title">
+          <div>
+            <p class="eyebrow">Mark your calendar</p>
+            <h3 id="upcoming-title">Upcoming celebrations</h3>
+          </div>
+          <div id="holiday-list" class="holiday-list"></div>
+        </section>
+      </section>
+    </main>
+    <footer>Made for unhurried planning · Holiday Atlas</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
